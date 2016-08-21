@@ -10,7 +10,7 @@ composer require mpyw/cowitter:@dev
 composer require vlucas/phpdotenv
 ```
 
-`.env_org`を`.env`にリネームして`CONSUMER＿KEY`から`ACCESS＿TOKEN＿SECRET`にツイッターアカウントのそれを、`NAME`に診断に使用する名前を記入してください
+`.env_org`を`.env`にリネームして`CONSUMER_KEY`から`ACCESS_TOKEN_SECRET`にツイッターアカウントのそれを、`NAME`に診断に使用する名前を記入してください
 
 ```
 php main.php
