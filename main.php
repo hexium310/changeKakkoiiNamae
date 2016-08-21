@@ -21,9 +21,10 @@ $dotenv->load();
 $curl = curl_init();
 curl_setopt_array($curl, [
     CURLOPT_URL => 'https://shindanmaker.com/498477',
-    CURLOPT_CUSTOMREQUEST => 'POST',
+    CURLOPT_POST => true,
     CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_POSTFIELDS => http_build_query(['u' => $_ENV['NAME']])
+    CURLOPT_POSTFIELDS => http_build_query(['u' => $_ENV['NAME']]),
+    CURLOPT_ENCODING => 'gzip',
 ]);
 $response = curl_exec($curl);
 curl_close($curl);
