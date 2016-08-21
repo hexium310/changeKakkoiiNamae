@@ -9,6 +9,13 @@ use mpyw\Cowitter\Client;
 use mpyw\Cowitter\HttpException;
 
 $dotenv = new Dotenv(__DIR__);
+$dotenv->required([
+    'CONSUMER_KEY',
+    'CONSUMER_SECRET',
+    'ACCESS_TOKEN',
+    'ACCESS_TOKEN_SECRET',
+    'NAME',
+])->notEmpty();
 $dotenv->load();
 
 $curl = curl_init();
