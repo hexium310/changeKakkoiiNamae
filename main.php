@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+require 'vendor/autoload.php';
 
 use DotEnv;
 use mpyw\Co\Co;
