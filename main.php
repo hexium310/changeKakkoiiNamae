@@ -2,12 +2,13 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
+use DotEnv;
 use mpyw\Co\Co;
 use mpyw\Co\CURLException;
 use mpyw\Cowitter\Client;
 use mpyw\Cowitter\HttpException;
 
-$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv = new Dotenv(__DIR__);
 $dotenv->load();
 
 $curl = curl_init();
