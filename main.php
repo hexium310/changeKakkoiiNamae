@@ -2,13 +2,12 @@
 
 require 'vendor/autoload.php';
 
-use DotEnv;
 use mpyw\Co\Co;
 use mpyw\Co\CURLException;
 use mpyw\Cowitter\Client;
 use mpyw\Cowitter\HttpException;
 
-$dotenv = new Dotenv(__DIR__);
+$dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->required([
     'CONSUMER_KEY',
     'CONSUMER_SECRET',
